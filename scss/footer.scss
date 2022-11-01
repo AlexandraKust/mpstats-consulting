@@ -1,0 +1,280 @@
+.footer {
+	background: #394252 url('../media/img/footer_lines.png') 0 0/100% no-repeat;
+	border-radius: 40px 40px 0px 0px; 
+	width: 100%;
+	padding: 29px 30px 36px;
+	font-family: 'Fira Sans';
+	font-style: normal;
+	position: relative;
+	z-index: 3;
+
+	&__row {
+		display: flex;
+		padding: 27px 0 40px;
+		position: relative;
+		gap: 30px;
+		&:first-child {
+			border-bottom: 1px solid #4D5562;
+		}
+	}
+
+	&__item {
+		flex: 1 1 50%;
+	}
+
+	&__icons {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 35px;
+	}
+
+	&__logo {
+		flex: 1 1 auto;
+		width: 155px;
+		height: 31px;
+		margin-right: 135px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__social {
+		flex: 1 1 50%;
+		display: flex;
+		align-items: center;
+	}
+
+	&__social-item {
+		margin-right: 15px;
+		width: 28px;
+		height: 28px;
+		svg {
+			fill: white;
+			transition: all 0.7s ease 0s;
+			&:hover {
+				fill: $green;
+				transition: all 0.7s ease 0s;
+			}
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__rights {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -0.02em;
+		color: #EEF1F3;
+		max-width: 543px;
+	}
+
+	&__navigation {
+		flex: 1 1 50%;
+		display: flex;
+	}
+
+	&__list {
+		flex: 1 1 50%;
+		&:first-child {
+			margin-right: 30px;
+		}
+	}
+
+	&__link {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		letter-spacing: -0.02em;
+		color: #FFFFFF;
+		transition: all 0.7s ease 0s;
+		&:hover {
+			text-decoration: underline;
+			transition: all 0.7s ease 0s;
+		}
+	}
+
+	&__pay {
+		flex: 1 1 50%;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 35px;
+		letter-spacing: -0.02em;
+		color: #FFFFFF;
+	}
+
+	&__paySystem {
+		display: flex;
+		align-items: center;
+		margin-bottom: 3px;
+		img {
+			max-width: 92px;
+			max-height: 16px;
+			margin-right: 11px;
+		}
+	}
+
+	&__comment {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 27px;
+		letter-spacing: -0.02em;
+		color: #909498;
+	}
+
+	&__info {
+		flex: 1 1 50%;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -0.02em;
+		color: #768089;
+	}
+
+	&__arrowup {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		z-index: 10;
+		right: -58px;
+		bottom: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		img {
+			width: 110%;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			background-color: white;
+			z-index: -1;
+			width: 25px;
+			height: 25px;
+			border-radius: 50%;
+		}
+	}
+	@media (max-width: 1155px) {
+		padding: 15px 0 36px 30px;
+
+		&__row {
+			padding: 18px 0 40px;
+		}
+		&__logo {
+			width: 138px;
+			height: 28px;
+			margin-right: 42px;
+		}
+		&__item {
+			padding-right: 100px;
+		}
+		&__pay {
+			padding-right: 100px;
+		}
+		&__navigation {
+			display: block;
+		}
+		&__text {
+			width: 343px;
+		}
+		&__link {
+			font-size: 12px;
+			line-height: 27px;
+		}
+		&__social {
+			margin-right: 0;
+		}
+		&__social-item {
+			width: 21px;
+			height: 21px;
+		}
+		&__info {
+			font-size: 12px;
+			line-height: 1;
+		}
+		&__arrowup {
+			right: 15px;
+			bottom: none;
+			top: -50px;
+		}
+	}
+	@media (max-width: 768px) {
+		border-radius: 30px 30px 0px 0px; 
+		padding: 12px 0 20px;
+		min-width: 375px;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+
+		&__row {
+			display: block;
+			padding: 15px 0 15px;
+			gap: 0;
+		}
+		&__item {
+			padding-right: 0;
+		}
+
+		&__icons {
+			margin-bottom: 27px;
+		}
+
+		&__social-item {
+			margin-right: 10px;
+			width: 18.7px;
+			height: 18.7px;
+		}
+
+		&__rights {
+			font-size: 12px;
+			line-height: 1;
+			margin-right: 0;
+			width: auto;
+			max-width: 342px;
+			margin-bottom: 18px;
+		}
+
+		&__navigation {
+			flex-direction: row;
+		}
+
+		&__list {
+			li {
+				padding: 7px 0;
+			}
+		}
+
+		&__link {
+			font-size: 13px;
+			line-height: 1.5;
+		}
+
+		&__arrowup {
+			width: 30px;
+			height: 30px;
+			right: 50%;
+			transform: translateX(50%);
+			top: -30px;
+		}
+
+		&__pay {
+			padding-right: 0;
+			margin-bottom: 20px;
+		}
+		&__info {
+			max-width: 342px;
+		}
+	}
+}
+
+

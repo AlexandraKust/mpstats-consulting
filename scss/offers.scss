@@ -1,0 +1,122 @@
+.offers {
+	&__name {
+		font-family: 'PT Sans';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 107.5%;
+		color: $grey;
+		margin-bottom: 55px;
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 86px;
+	}
+
+	&__item {
+		background: #FFFFFF;
+		box-shadow: 20px 0px 80px rgba(63, 70, 81, 0.15);
+		border-radius: 10px;
+		width: 410px;
+		padding: 135px 35px 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		flex: 0 1 auto;
+		margin-right: 30px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__logo {
+		width: 263px;
+		height: 53px;
+		margin: 0 auto;
+		margin-bottom: 114px;
+
+		img {
+			width: 100%;
+		}
+	}
+	&__text {
+		flex: 1 1 auto;
+		font-family: 'Fira Sans';
+		font-style: normal;
+		font-size: 24px;
+		line-height: 42px;
+		letter-spacing: -0.02em;
+		color: $grey;
+		margin-bottom: 52px;
+	}
+
+	&__title {
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		span {
+			text-transform: uppercase;
+		}
+	}
+
+	@media (max-width: 1230px) {
+		&__name {
+			font-size: 30px;
+			margin-bottom: 33px;
+		}
+		&__row {
+			padding: 0 0 55px;
+			justify-content: center;
+		}
+		&__item {
+			width: 230px;
+			padding: 76px 21px 34px;
+			margin-right: 19px;
+			box-shadow: 11.2785px 0px 45.1138px rgba(63, 70, 81, 0.15);
+			border-radius: 5px;
+		}
+		&__logo {
+			width: 147px;
+			height: 30px;
+			margin-bottom: 64px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 23px;
+			margin-bottom: 10px;
+		}
+	}
+	@media (max-width: 768px) {
+		&__name {
+			margin-bottom: 41px;
+		}
+		&__row {
+			flex-direction: column;
+			align-items: center;
+			padding: 0 0 50px;
+		}
+		&__item {
+			margin-right: 0;
+			margin-bottom: 28px;
+			width: 321px;
+			box-shadow: 15.6585px 0px 62.634px rgba(63, 70, 81, 0.15);
+			border-radius: 7.8px;
+			padding: 105px 42px 60px;
+		}
+		&__logo {
+			width: 205px;
+			height: 41px;
+			margin-bottom: 100px;
+		}
+		&__text {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 30px;
+		}
+	}
+}
